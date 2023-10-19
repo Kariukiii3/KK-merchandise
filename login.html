@@ -13,9 +13,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Login & Signup Form HTML CSS | CodingNepal</title>
+    <title>Login & Signup Form</title>
     <link rel="stylesheet" href="css/login.css" />
     <script src="../custom-scripts.js" defer></script>
+    <script src="js/scripts.js"></script>
   </head>
   <body>
     <section class="wrapper">
@@ -24,13 +25,14 @@
         <form action="#">
           <input type="text" placeholder="Full name" required />
           <input type="text" placeholder="Email address" required />
-          <input type="password" placeholder="Password" required />
+          <input type="password" placeholder="Password" id="password" required />
+          <input type="password" placeholder="Re-enter Password" id="confirmPassword" required />
           <div class="checkbox">
-            <input type="checkbox" id="signupCheck" />
-            <label for="signupCheck">I accept all terms & conditions</label>
+              <input type="checkbox" id="signupCheck" required/>
+              <label for="signupCheck">I accept all terms & conditions</label>
           </div>
           <input type="submit" value="Signup" />
-        </form>
+      </form>
       </div>
 
       <div class="form login">
